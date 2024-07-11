@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .contact-form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .contact-form h2 {
+            color: #ff6600;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
